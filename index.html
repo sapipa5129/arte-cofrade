@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canicofrade.es | En Desarrollo</title>
+    <style>
+        :root {
+            --dorado: #c5a059;
+            --oscuro: #1a1a1a;
+            --crema: #f4f4f4;
+            --blanco: #ffffff;
+            --alerta: #8b0000; /* Un granate sobrio para el aviso de desarrollo */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--crema);
+            color: var(--oscuro);
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Barra de estado de desarrollo */
+        .dev-banner {
+            background-color: var(--alerta);
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        header {
+            background-color: var(--oscuro);
+            padding: 1.5rem 0;
+            text-align: center;
+            border-bottom: 3px solid var(--dorado);
+        }
+
+        nav a {
+            color: var(--blanco);
+            text-decoration: none;
+            margin: 0 15px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        /* Contenedor del Logo 500x500 */
+        .logo-container {
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 30px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            /* Sombra elegante para resaltar el logo sobre el fondo claro */
+            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            color: var(--oscuro);
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 500px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color: var(--oscuro);
+            color: var(--blanco);
+            text-align: center;
+            padding: 25px 0;
+            font-size: 0.8rem;
+            border-top: 1px solid #333;
+        }
+
+        /* Animación sutil para el logo */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero {
+            animation: fadeIn 1.2s ease-out;
+        }
+
+        @media (max-width: 600px) {
+            .logo-container { max-width: 280px; }
+            h1 { font-size: 1.6rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dev-banner">
+        ⚠️ Sitio web actualmente en desarrollo
+    </div>
+
+    <header>
+        <nav>
+            <a>Próximamente</a>
+            <a href="https://www.instagram.com/canicofrade">Contacto</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="logo-container">
+            <img src="logo.png" alt="Logo Canicofrade.es">
+        </div>
+
+        <h1>Canicofrade.es</h1>
+        <p class="subtitle">Estamos preparando nuestro sitio oficial. Muy pronto compartiremos nuestra pasión contigo.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Canicofrade.es - Pasión y Tradición.</p>
+    </footer>
+
+</body>
+</html>
